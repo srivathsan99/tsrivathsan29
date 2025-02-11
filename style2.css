@@ -8,7 +8,6 @@ body {
   justify-content: center;
   background: #ffffff;
   color: #000000;
-  flex-direction: column; /* Ensures everything stacks properly */
 }
 
 .skills {
