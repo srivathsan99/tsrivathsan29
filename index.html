@@ -131,22 +131,26 @@
 								</div>
 							</div>
 
-							<script>
-								$('.skill-per').each(function(){
-								var $this = $(this);
-								var per = $this.attr('per');
-								$this.css("width",per+'%');
-								$({animatedValue: 0}).animate({animatedValue: per},{
-									duration: 1000,
-									step: function(){
-									$this.attr('per', Math.floor(this.animatedValue) + '%');
-									},
-									complete: function(){
-									$this.attr('per', Math.floor(this.animatedValue) + '%');
-									}
-								});
-								});
-							</script>												
+							$(document).ready(function(){
+							    $('.skill-per').each(function(){
+							        var $this = $(this);
+							        var per = $this.attr('per');
+							
+							        // Set initial width to 0 and then animate it
+							        $this.css("width", "0%");
+							
+							        $this.animate({ width: per + '%' }, {
+							            duration: 1000,
+							            step: function(now){
+							                $this.attr('per', Math.floor(now) + '%'); // Update percentage text
+							            },
+							            complete: function(){
+							                $this.attr('per', per + '%'); // Ensure final value is correct
+							            }
+							        });
+							    });
+							});
+												
 						</section>
 						<!-- First Section -->
 							<section id="first" class="main special">
