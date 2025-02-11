@@ -43,6 +43,11 @@ h2 {
     top: 5px;
 }
 
+.icons img {
+    background: transparent;
+    border-radius: 5px; /* Optional: Adds a rounded effect */
+}
+
 .content {
     background-color: #1e1e1e;
     padding: 10px;
