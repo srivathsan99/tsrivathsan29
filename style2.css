@@ -26,44 +26,154 @@ body {
   text-align: center;
 }
 
-.skill-bar{
+.skill-bar {
+  background: #e0e0e0;
   height: 20px;
-  background: #cacaca;
-  border-radius: 8px;
-}
-
-.skill-per{
-  height: 20px;
-  background-color: #0fbcf9;
-  border-radius: 8px;
-  width: 0;
-  transition: 20s linear;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 12px;
   position: relative;
 }
 
-.skill-per::before{
-  content: attr(per);
-  position: absolute;
-  padding: 4px 6px;
-  background-color: #000;
-  color: #fff;
-  font-size: 12px;
+.skill-per {
+  background: #0fbcf9;
+  height: 100%;
+  width: 0;
+  position: relative;
   border-radius: 4px;
-  top: -35px;
-  right: 0;
-  transform: translateX(50%);
-
+  transition: width 1s ease-in-out;
 }
 
-.skill-per::after{
-  content: '';
+.skill-per .tooltip {
   position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: #000;
-  top: -16px;
-  right: 0;
-  transform: translateX(50%) rotate(45deg);
-  border-radius: 2px;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
 
+.cert-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 0;
+  list-style: none;
+  justify-items: center;
+}
+
+.hover-card {
+  width: 100%;
+  max-width: 250px;
+  background-color: #ffffff1a;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  border: 10px solid rgba(255, 255, 255, 0.3);
+}
+
+.hover-card:hover {
+  transform: scale(1.03);
+}
+
+.hover-card img {
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.hover-card:hover img {
+  transform: scale(1);
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+}
+
+.card-text {
+  margin: 10px;
+  padding: 10px;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  border-radius: 12px;
+  color: #000;
+  font-size: 14px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.hover-card:hover .card-text {
+  display: block;
+  opacity: 1;
+}
+
+
+/* Project classes*/
+
+.project-card {
+  width: auto;
+  min-height: auto;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+  transition: transform 0.3s ease;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-text {
+  margin: 10px;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 12px;
+  color: #000000;
+  font-size: 0.95rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.project-card:hover .project-text {
+  opacity: 1;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+.project-card img {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.project-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
