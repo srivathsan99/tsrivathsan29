@@ -15,17 +15,17 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-						<h1><p align="center" style="color:black">Srivathsan thirumurugan</p></h1>
+						<h1><p align="center" style="color:black">Srivathsan Thirumurugan</p></h1>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
 							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#skl">Skills</a></li>
-							<li><a href="#first">Masters Thesis</a></li>
-							<li><a href="#second">Project Handled</a></li>
-							<li><a href="#third">Personal Projects</a></li>
-							<li><a href="#cta">Certificate</a></li>							
+							<li><a href="#first">Certificate</a></li>							
+							<li><a href="#second">AWS Training Certificate</a></li>							
+							<li><a href="#third">Masters Thesis</a></li>
+							<li><a href="#fourth">Project Handled</a></li>
+							<li><a href="#fifth">Personal Projects</a></li>
 						</ul>
 					</nav>
 
@@ -83,77 +83,238 @@
 									                </li>
 									            </ul>								
 									</div>
+									<div class="right-side">
 									<span class="image"><img src="Srivathsan Thirumurugan.jpg" alt="" /></span>
+
+									<meta charset="utf-8">
+									<link rel="stylesheet" href="style2.css">
+									<meta name="viewport" content="width=device-width, initial-scale=1.0">
+									<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+									<!-- </head> -->
+									<body>														
+									<div class="skills">
+										<div class="skill">
+										<div class="skill-name">
+											Python
+										</div>
+											<div class="skill-bar">
+												<div class="skill-per" per="80"><span class="tooltip">80%</span></div>
+											</div>
+										<div class="skill-name">
+											Power BI
+										</div>
+											<div class="skill-bar">
+												<div class="skill-per" per="70"><span class="tooltip">70%</span></div>
+											</div>
+										<div class="skill-name">
+											SQL
+										</div>
+											<div class="skill-bar">
+												<div class="skill-per" per="70"><span class="tooltip">70%</span></div>
+											</div>
+										<div class="skill-name">
+											R Programming
+										</div>
+											<div class="skill-bar">
+												<div class="skill-per" per="60"><span class="tooltip">60%</span></div>
+											</div>
+										<div class="skill-name">
+											C++
+										</div>
+											<div class="skill-bar">
+												<div class="skill-per" per="60"><span class="tooltip">60%</span></div>
+											</div>
+										</div>
+									</div>
+										<script>
+											$(document).ready(function(){
+												$('.skill-per').each(function(){
+													var $this = $(this);
+													var per = $this.attr('per');
+									
+													// Set initial width to 0 and then animate it
+													$this.css("width", "0%");
+									
+													$this.animate({ width: per + '%' }, {
+														duration: 1000,
+														step: function(now){
+															$this.attr('per', Math.floor(now) + '%'); // Update percentage text
+														},
+														complete: function(){
+															$this.attr('per', per + '%'); // Ensure final value is correct
+														}
+													});
+												});
+											});
+										</script>
+    								</div>
 								</div>
 							</section>
 
-						<!-- Header -->
-						<section id="skl" class="main special">
-							<header class="major">
-								<h2>Skills</h2>								
-							</header>
-							<meta charset="utf-8">
-							<link rel="stylesheet" href="style2.css">
-							<meta name="viewport" content="width=device-width, initial-scale=1.0">
-							<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-							</head>
-							<body>														
-							<div class="skills">
-								<div class="skill">
-								<div class="skill-name">Python</div>
-								<div class="skill-bar">
-									<div class="skill-per" per="80"></div>
-								</div>
-								</div>
-								<div class="skill">
-								<div class="skill-name">Tableau</div>
-								<div class="skill-bar">
-									<div class="skill-per" per="70"></div>
-								</div>
-								</div>
-								<div class="skill">
-								<div class="skill-name">SQL</div>
-								<div class="skill-bar">
-									<div class="skill-per" per="60"></div>
-								</div>
-								</div>
-								<div class="skill">
-								<div class="skill-name">R Programming</div>
-								<div class="skill-bar">
-									<div class="skill-per" per="60"></div>
-								</div>
-								</div>
-								<div class="skill">
-									<div class="skill-name">C++</div>
-									<div class="skill-bar">
-										<div class="skill-per" per="60"></div>
-								</div>
-								</div>
-							</div>
-							    <script>
-							        $(document).ready(function(){
-							            $('.skill-per').each(function(){
-							                var $this = $(this);
-							                var per = $this.attr('per');
-							
-							                // Set initial width to 0 and then animate it
-							                $this.css("width", "0%");
-							
-							                $this.animate({ width: per + '%' }, {
-							                    duration: 1000,
-							                    step: function(now){
-							                        $this.attr('per', Math.floor(now) + '%'); // Update percentage text
-							                    },
-							                    complete: function(){
-							                        $this.attr('per', per + '%'); // Ensure final value is correct
-							                    }
-							                });
-							            });
-							        });
-							    </script>
-						</section>
 						<!-- First Section -->
-							<section id="first" class="main special">
+						<section id="first" class="main special">
+							<header class="major">																	
+								<h2>Certificate</h2>
+							</header>
+							<ul class="features">	
+								<li>
+									<a href="https://drive.google.com/file/d/1kovzOehtsS5mL0zLZZ6L_82YMQBz8Xf4/view?usp=drive_link">
+										<div class="hover-card">
+										<img src="cert.png" alt="Cert 1">
+										<h3 class="card-title">Udemy: AWS Machine Learning Engineer Associate</h3>
+										<div class="card-text">Certification from Udemy. (Placeholder text)</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="https://drive.google.com/file/d/1OlSeewf1EoI_-oL3Id4KsO6G4jcwamCz/view?usp=drive_link">
+										<div class="hover-card">
+										<img src="cert.png" alt="Cert 1">
+										<h3 class="card-title">Udemy: Machine Learning, Data Science and Generative AI with Python</h3>
+										<div class="card-text">Certification from Udemy. (Placeholder text)</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="https://drive.google.com/file/d/1rPHFKaTj3Re0cFER6rveOaiRg4RKx4UN/view?usp=drive_link">
+										<div class="hover-card">
+										<img src="cert.png" alt="Cert 1">
+										<h3 class="card-title">Udemy: PHP & MySQL</h3>
+										<div class="card-text">Certification Course for Beginners. Covered modules on table creation, updates, and alterations.</div>
+										</div>
+									</a>
+									</li>
+
+								<li>
+									<a href="https://drive.google.com/file/d/1xT9_dvW3Q61Vec7uIjIjvh7NMr2fIsRJ/view?usp=drive_link">
+										<div class="hover-card">
+										<img src="cert.png" alt="Cert 2">
+										<h3 class="card-title">KKM Soft: Data Science using R</h3>
+										<div class="card-text">Workshop focused on data analysis, modeling, and R-based implementation techniques.</div>
+										</div>
+									</a>
+									</li>
+
+								<li>
+									<a href="https://drive.google.com/file/d/1-WnrP6RO1u2SxuMRLH4iW2O8QiqxT_fV/view?usp=share_link">
+										<div class="hover-card">
+										<img src="cert.png" alt="Cert 3">
+										<h3 class="card-title">Udemy: Data Science</h3>
+										<div class="card-text">Included 10+ modules covering theory, practice, and final project implementation.</div>
+										</div>
+									</a>
+									</li>
+
+								<li>
+									<a href="https://drive.google.com/file/d/13HiYsTCjFxr8J_zycMs3ET_4SZSdTEW-/view?usp=share_link">
+										<div class="hover-card">
+										<img src="cert.png" alt="Cert 4">
+										<h3 class="card-title">Kaggle: Intermediate Certificate</h3>
+										<div class="card-text">Covered 7 modules including introduction to model building and applied machine learning.</div>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="https://drive.google.com/file/d/1Uvemdjnoml_luN_nBij-3VY8BLoaqvqK/view?usp=share_link">
+										<div class="hover-card">
+										<img src="cert.png" alt="Cert 5">
+										<h3 class="card-title">HackerRank: Python (Basic)</h3>
+										<div class="card-text">Validated foundational Python concepts like syntax, loops, and data structures.</div>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="https://drive.google.com/file/d/1St2A1f4hQfT0C7YUoa_xh8dcRYEmLzwx/view?usp=share_link">
+										<div class="hover-card">
+										<img src="cert.png" alt="Cert 6">
+										<h3 class="card-title">IBM: Intro to AI</h3>
+										<div class="card-text">A concise overview of Artificial Intelligence and its real-life applications.</div>
+										</div>
+									</a>
+								</li>
+							</ul>								
+						</section>
+
+						<!-- Second Section -->
+						<section id="Second" class="main special">
+							<header class="major">																	
+								<h2>AWS Training Certificate</h2>
+							</header>
+								<ul class="features">	
+								<li>
+									<a href="https://drive.google.com/file/d/1Jv4oudAim0e6DXIIjUjL6F-yfmuSD9Tz/view?usp=drive_link">
+										<div class="hover-card">
+										<img src="aws-training-and-certification-icon.png" alt="Cert 1">
+										<h3 class="card-title">Official Practice Question Set AWS Certified Cloud Practitioner</h3>
+										<div class="card-text"></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="https://drive.google.com/file/d/1pNXAvhvli5wdzHlDCIC3AbrHmFEHIiQ3/view?usp=drive_link">
+										<div class="hover-card">
+										<img src="aws-training-and-certification-icon.png" alt="Cert 1">
+										<h3 class="card-title">Machine Learning Terminology and Process.pdf</h3>
+										<div class="card-text"></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="https://drive.google.com/file/d/122aRl56jiaud3-EEjbUfgLrYYbIam2YF/view?usp=drive_link">
+										<div class="hover-card">
+										<img src="aws-training-and-certification-icon.png" alt="Cert 1">
+										<h3 class="card-title">Job Roles in the Cloud</h3>
+										<div class="card-text"></div>
+										</div>
+									</a>
+									</li>
+
+								<li>
+									<a href="https://drive.google.com/file/d/1U0YkeIyUaVxCFMnc0Djat1biFcgpiUyj/view?usp=drive_link">
+										<div class="hover-card">
+										<img src="aws-training-and-certification-icon.png" alt="Cert 2">
+										<h3 class="card-title">Introduction to Machine Learning Art of the Possible</h3>
+										<div class="card-text"></div>
+										</div>
+									</a>
+									</li>
+
+								<li>
+									<a href="https://drive.google.com/file/d/1b8wl8fZAbR3Jc1bjD5VSQX-oBHwZkv54/view?usp=drive_link">
+										<div class="hover-card">
+										<img src="aws-training-and-certification-icon.png" alt="Cert 3">
+										<h3 class="card-title">Exam Prep Plan Overview AWS Certified Machine Learning Engineering - Associate</h3>
+										<div class="card-text"></div>
+										</div>
+									</a>
+									</li>
+
+								<li>
+									<a href="https://drive.google.com/file/d/1YaJm0RtUlLgvZdKh50Ro1hT3a4KvLSCH/view?usp=drive_link">
+										<div class="hover-card">
+										<img src="aws-training-and-certification-icon.png" alt="Cert 4">
+										<h3 class="card-title">AWS Cloud Practitioner Essentials</h3>
+										<div class="card-text"></div>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="https://drive.google.com/file/d/1HKzIUE-JB7N-wTMFhoan-IPc7BucyKY8/view?usp=drive_link">
+										<div class="hover-card">
+										<img src="aws-training-and-certification-icon.png" alt="Cert 5">
+										<h3 class="card-title">AWS Billing and Cost Management</h3>
+										<div class="card-text"></div>
+										</div>
+									</a>
+								</li>
+								</ul>								
+							</section>
+
+						<!-- Third Section -->
+							<section id="third" class="main special">
 								<header class="major">
 									<h2>Masters Thesis</h2>
 								</header>
@@ -191,8 +352,8 @@
 								</footer>
 							</section>
 
-						<!-- Second Section -->
-							<section id="second" class="main special">
+						<!-- Fourth Section -->
+							<section id="Fourth" class="main special">
 								<header class="major">
 									<h2>Project Handled</h2>
 								</header>
@@ -204,36 +365,60 @@
 							</section>
 
 
-						<!-- Third Section -->
-						<section id="third" class="main special">
+						<!--  Fifth Section -->
+						<section id="Fifth" class="main special">
 							<header class="major">
 								<h2>Personal Projects</h2>
 							</header>
 							<ul class="features">	
-								<li>									
-									<a href="https://github.com/srivathsan99/Malware-Detection"><img src="mal.jpg" width="400" height="300"></a>  
-									<a href="https://github.com/srivathsan99/Malware-Detection"><h3>Malware Detection</h3></a>
-									<p>Reducing the resource utilisation for detecting the detecting malware through various technique.</p>
-								</li>
-								<li>									
-									<a href="https://github.com/Srivathsan99/Classificaiton-of-Audio-Using-Neural-Network.git"><img src="unnamed.jpg" width="400" height="300"></a>  
-									<a href="https://github.com/Srivathsan99/Classificaiton-of-Audio-Using-Neural-Network.git"><h3>Audio classification using Deep Neural Network</h3></a>
-									<p>Classifying audio as various noises such as car, dog, etc.</p>
-								</li>
 								<li>
-									<a href="https://github.com/Srivathsan99/Movie-Recommendation-System.git"><img src="Movie-Recommendation.jpg" width="400" height="300"></a>
-									<a href="https://github.com/Srivathsan99/Movie-Recommendation-System.git"><h3>Movie Recommendation System</h3></a>
-									<p>Utilising tags and genres of movies and using cosine similarity.</p>
+								<a href="https://github.com/srivathsan99/Malware-Detection">
+									<div class="project-card">
+									<img src="mal.jpg" alt="Malware Detection">
+									<h3 class="project-title">Malware Detection</h3>
+									<div class="project-text">Reducing resource utilization for detecting malware using efficient techniques.</div>
+									</div>
+								</a>
 								</li>
+
 								<li>
-									<a href="https://github.com/Srivathsan99/Heart-Failure.git"><img src="HeartFailure_share.jpg" width="400" height="300"></a>
-									<a href="https://github.com/Srivathsan99/Heart-Failure.git"><h3>Heart Failure</h3></a>
-									<p>Determining whether a person might have heart failure or not by their personal info such as age, high blood sex, etc.</p>
+								<a href="https://github.com/Srivathsan99/Classificaiton-of-Audio-Using-Neural-Network.git">
+									<div class="project-card">
+									<img src="unnamed.jpg" alt="Audio Classification">
+									<h3 class="project-title">Audio Classification (DNN)</h3>
+									<div class="project-text">Classifies audio clips into sound categories such as car, dog, and more using deep learning.</div>
+									</div>
+								</a>
 								</li>
+
 								<li>
-									<a href="https://github.com/Srivathsan99/Online-Payment-Fraud.git"><img src="fraud.jpg" width="400" height="300"></a>									
-									<a href="https://github.com/Srivathsan99/Online-Payment-Fraud.git"><h3>Fraudulent Transaction Detection</h3></a>
-									<p>We are trying to determine fraud as it is a widespread crime by their transaction amount and location.</p>
+								<a href="https://github.com/Srivathsan99/Movie-Recommendation-System.git">
+									<div class="project-card">
+									<img src="Movie-Recommendation.jpg" alt="Movie Recommender">
+									<h3 class="project-title">Movie Recommendation System</h3>
+									<div class="project-text">Recommends movies using tags and genres with cosine similarity.</div>
+									</div>
+								</a>
+								</li>
+
+								<li>
+								<a href="https://github.com/Srivathsan99/Heart-Failure.git">
+									<div class="project-card">
+									<img src="HeartFailure_share.jpg" alt="Heart Failure Prediction">
+									<h3 class="project-title">Heart Failure Prediction</h3>
+									<div class="project-text">Predicts risk of heart failure using medical data such as age, blood pressure, and other metrics.</div>
+									</div>
+								</a>
+								</li>
+
+								<li>
+								<a href="https://github.com/Srivathsan99/Online-Payment-Fraud.git">
+									<div class="project-card">
+									<img src="fraud.jpg" alt="Fraud Detection">
+									<h3 class="project-title">Fraudulent Transaction Detection</h3>
+									<div class="project-text">Detects fraudulent online transactions using amount, time, and location features.</div>
+									</div>
+								</a>
 								</li>
 							</ul>
 							<footer class="major">
@@ -243,43 +428,6 @@
 							</footer>
 						</section>
 
-						<!-- Fourth Section -->
-							<section id="cta" class="main special">
-								<header class="major">																	
-									<h2>Certificate</h2>
-								</header>
-								<ul class="features">	
-									<li>									
-										<a href="https://drive.google.com/file/d/1rPHFKaTj3Re0cFER6rveOaiRg4RKx4UN/view?usp=drive_link"><img src="cert.png" width="200" height="200"></a>
-										<h3>Udemy: PHP & MySQL - Certification Course for Beginners</h3>
-										<p>Contained 2 modules which taught how to create and update/alter and work with tables</p>
-									</li>
-									<li>									
-										<a href="https://drive.google.com/file/d/1SIafIPxf7qQXkEC6ZxoU1zzbfB_UofWp/view?usp=drive_link"><img src="cert.png" width="200" height="200"></a>
-										<h3>KKM Soft: Data Science using R</h3>
-									</li>
-									<li>									
-										<a href="https://drive.google.com/file/d/1-WnrP6RO1u2SxuMRLH4iW2O8QiqxT_fV/view?usp=share_link"><img src="cert.png" width="200" height="200"></a>
-										<h3>Udemy: Data Science</h3>
-										<p>Contained more than 10 modules as a theoretical and practical concept along with a project</p>
-									</li>
-									<li>
-										<a href="https://drive.google.com/file/d/13HiYsTCjFxr8J_zycMs3ET_4SZSdTEW-/view?usp=share_link"><img src="cert.png" width="200" height="200"></a>
-										<h3>Kaggle Intermediate certificate</h3>
-										<p>Collectiong of 7 modules from introduction to model building in Machine Learning</p>
-									</li>
-									<li>
-										<a href="https://drive.google.com/file/d/1Uvemdjnoml_luN_nBij-3VY8BLoaqvqK/view?usp=share_link"><img src="cert.png" width="200" height="200"></a>
-										<h3>Hacker Rank Python (Basic)</h3>
-										<p>Basic concepts on pyhton</p>
-									</li>
-									<li>
-										<a href="https://drive.google.com/file/d/1St2A1f4hQfT0C7YUoa_xh8dcRYEmLzwx/view?usp=share_link"><img src="cert.png" width="200" height="200"></a>
-										<h3>IBM Introduction to artificial intelligence</h3>
-										<p> A concise introduction to Artificial Intelligence and how they can be implemented in our life</p>
-									</li>
-								</ul>								
-							</section>
 					</div>
 
 				<!-- Footer -->
@@ -290,7 +438,7 @@
 							<dt>Address</dt>
 							<dd>Halifax, Canada</dd>
 							<dt>Phone</dt>
-							<dd>(782) 778-8701</dd>
+							<dd> +1 (782) 778-8701</dd>
 							<dt>Email</dt>
 						    	<dd><a href="mailto:sr399706@dal.ca">sr399706@dal.ca</a></dd>
 						</dl>
