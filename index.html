@@ -21,11 +21,11 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">Certificate</a></li>							
-							<li><a href="#second">AWS Training Certificate</a></li>							
-							<li><a href="#third">Masters Thesis</a></li>
-							<li><a href="#fourth">Project Handled</a></li>
-							<li><a href="#fifth">Personal Projects</a></li>
+							<li><a href="#Publications">Publications</a></li>							
+							<li><a href="#Certificate">Certificate</a></li>							
+							<li><a href="#AWS Training Certificate">AWS Training Certificate</a></li>							
+							<li><a href="#Project Handled">Project Handled</a></li>
+							<li><a href="#Personal Projects">Personal Projects</a></li>
 						</ul>
 					</nav>
 
@@ -152,7 +152,34 @@
 							</section>
 
 						<!-- First Section -->
-						<section id="first" class="main special">
+						<section id="Publications" class="main special">
+							<header class="major">																	
+								<h2>Publications</h2>
+							</header>
+							<ul class="features">
+								<li>
+									<div class="hover-card" onclick="openModal('modal1')">
+										<img src="dal.png" alt="Cert 1">
+										<h3 class="card-title">Identifying Network Traffic Signatures...</h3>
+									</div>
+								</li>
+								<li>
+									<div class="hover-card" onclick="openModal('modal2')">
+										<img src="NOMS.png" alt="Cert 1">
+										<h3 class="card-title">Identifying Synchronous and Asynchronous...</h3>
+									</div>
+								</li>
+								<li>
+									<div class="hover-card" onclick="openModal('modal3')">
+										<img src="NOMS.png" alt="Cert 1">
+										<h3 class="card-title">Encrypted Network Traffic Analysis (ENTA)...</h3>
+									</div>
+								</li>
+							</ul>
+						</section>
+
+						<!-- Second Section -->
+						<section id="Certificate" class="main special">
 							<header class="major">																	
 								<h2>Certificate</h2>
 							</header>
@@ -237,8 +264,8 @@
 							</ul>								
 						</section>
 
-						<!-- Second Section -->
-						<section id="second" class="main special">
+						<!-- Third Section -->
+						<section id="AWS Training Certificate" class="main special">
 							<header class="major">																	
 								<h2>AWS Training Certificate</h2>
 							</header>
@@ -313,47 +340,8 @@
 								</ul>								
 							</section>
 
-						<!-- Third Section -->
-							<section id="third" class="main special">
-								<header class="major">
-									<h2>Masters Thesis</h2>
-								</header>
-								<ul class="features">
-									<h2>Identifying Network Traffic Signatures For</h2>
-									<h2>Texting Via Instant Messaging Applications: A</h2>
-									<h2>Machine Learning Approach</h2>
-
-									<p>As Instant Messaging Applications become more popular, they can be used for a
-									variety of purposes, including sending files, making voice and video calls as well
-									as texting in groups and private channels for both personal and professional purposes.</p>
-									
-									<p>I aim to explore network traffic signatures in instant messaging applications
-									for network monitoring and analysis purposes. To achieve this I designed and developed a framework to automatically generate and capture traffic from the seven most
-									used and popular instant messaging applications, namely Discord, Messenger, Signal,
-									Skype, Teams, Telegram, and WhatsApp.</p>
-									
-									<p>I have analyzed and discovered patterns of texting via IMAs from the perspective of texting behaviour such as synchronous
-									and asynchronous communications. Moreover, their traffic is generated and captured
-									with different types of user communication based on the number of participants such
-									as private texting with two users, group texting with three users, and group texting with four users.</p>
-									
-									<p>The resulting end-to-end encrypted traffic is analyzed using
-									a machine-learning-based approach to traffic metadata without using deep packet
-									inspection. Evaluations show that it is possible to identify between private, groups
-									with different users for asynchronous and synchronous instant messaging applications.</p>
-									
-									<p>This in return could help better planning and management of the network
-									operations for user quality of service.</p>
-								</ul>	
-								<footer class="major">
-								<ul class="actions special">
-									<li><a href="https://dalspace.library.dal.ca/items/50cadb20-9f9a-47dd-8e73-89163a9bc962" class="button">Learn More</a></li>
-								</ul>
-								</footer>
-							</section>
-
 						<!-- Fourth Section -->
-							<section id="fourth" class="main special">
+							<section id="Project Handled" class="main special">
 								<header class="major">
 									<h2>Project Handled</h2>
 								</header>
@@ -364,9 +352,8 @@
 								</ul>	
 							</section>
 
-
 						<!--  Fifth Section -->
-						<section id="fifth" class="main special">
+						<section id="Personal Projects" class="main special">
 							<header class="major">
 								<h2>Personal Projects</h2>
 							</header>
@@ -467,6 +454,69 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<div id="modal1" class="modal">
+			<div class="modal-content">
+				<span class="close" onclick="closeModal('modal1')">&times;</span>
+				<h2>Identifying Network Traffic Signatures For Texting Via Instant Messaging Applications: A Machine Learning Approach (2024) </h2>
+				<p>As Instant Messaging Applications become more popular, they can be used for a variety of purposes, including sending files, making voice and video calls as well as texting in groups and private channels for both personal and professional purposes.</p>
+				<p>I aim to explore network traffic signatures in instant messaging applications for network monitoring and analysis purposes. To achieve this I designed and developed a framework to automatically generate and capture traffic from the seven most used and popular instant messaging applications, namely Discord, Messenger, Signal, Skype, Teams, Telegram, and WhatsApp.</p>
+				<p>I have analyzed and discovered patterns of texting via IMAs from the perspective of texting behaviour such as synchronous and asynchronous communications. Moreover, their traffic is generated and captured with different types of user communication based on the number of participants such as private texting with two users, group texting with three users, and group texting with four users.</p>
+				<p>The resulting end-to-end encrypted traffic is analyzed using a machine-learning-based approach to traffic metadata without using deep packet inspection. Evaluations show that it is possible to identify between private, groups with different users for asynchronous and synchronous instant messaging applications.</p>
+				<p>This in return could help better planning and management of the network operations for user quality of service.</p>
+				<footer class="major">
+					<ul class="actions special">
+						<li><a href="https://dalspace.library.dal.ca/items/50cadb20-9f9a-47dd-8e73-89163a9bc962" class="button">Link to paper</a></li>
+					</ul>
+				</footer>
+			</div>
+			</div>
+
+			<div id="modal2" class="modal">
+			<div class="modal-content">
+				<span class="close" onclick="closeModal('modal2')">&times;</span>
+				<h2>Identifying Synchronous and Asynchronous Communications in IMA Traffic (2025) </h2>
+				<p>Instant messaging applications (IMAs) rely on message encryption to preserve privacy and security, which makes network traffic inspection difficult. For better network monitoring and analysis, we explore network traffic signatures in IMAs. We develop a framework to automatically generate and capture traffic from seven popular IMAs. We discover patterns from text messaging behavior, such as synchronous and asynchronous as well as group and private communications. We analyze the resulting end-to-end encrypted traffic using a machine learning-based approach to traffic metadata without using deep packet inspection. The evaluations show that it is possible to identify between groups with different numbers of users for asynchronous and synchronous communication models. This, in turn, can help better plan and manage network operations for better quality of service.</p>
+				<footer class="major">
+					<ul class="actions special">
+						<li><a href="https://ieeexplore.ieee.org/document/11073614" class="button">Link to paper</a></li>
+					</ul>
+				</footer>
+			</div>
+			</div>
+
+			<div id="modal3" class="modal">
+			<div class="modal-content">
+				<span class="close" onclick="closeModal('modal3')">&times;</span>
+				<h2>Encrypted Network Traffic Analysis (ENTA) Platform: IMA VoIP Traffic Identification (2025) </h2>
+				<p>This paper introduces the Encrypted Network Traffic Analysis (ENTA) platform, a scalable AI-driven system de-signed for traffic analysis with support for identifying encrypted VoIP traffic generated by instant messaging applications (IMAs). User behaviors, such as exchanging audio messages through different IMAs, are emulated, and the resulting network traffic is captured for analysis. The ENTA platform's capabilities are demonstrated in feature extraction, data pre-processing, AI model training and testing, and generating key performance indi-cators (KPIs) to assist network operations teams. This demonstration showcases the ENTA system's end-to-end functionality with a particular emphasis on accurately classifying and identifying IMA VoIP traffic.</p>
+				<footer class="major">
+					<ul class="actions special">
+						<li><a href="https://ieeexplore.ieee.org/document/11073738" class="button">Link to paper</a></li>
+					</ul>
+				</footer>
+			</div>
+			</div>
+
+			<script>
+			function openModal(id) {
+				document.getElementById(id).style.display = 'block';
+			}
+
+			function closeModal(id) {
+				document.getElementById(id).style.display = 'none';
+			}
+
+			// Optional: Close modal on outside click
+			window.onclick = function(event) {
+				const modals = document.getElementsByClassName('modal');
+				for (let modal of modals) {
+				if (event.target === modal) {
+					modal.style.display = "none";
+				}
+				}
+			}
+			</script>
 
 	</body>
 </html>
